@@ -20,9 +20,10 @@ st.caption("Dataset: UCI Dry Bean | Multiclass classification")
 MODEL_FILES = {
     "Logistic Regression": "logistic_regression.joblib",
     "Decision Tree": "decision_tree.joblib",
-    "K-Nearest Neighbors": "knearest_neighbors.joblib",
-    "Gaussian Naive Bayes": "gaussian_naive_bayes.joblib",
-    "Support Vector Machine": "support_vector_machine.joblib",
+    "K-Nearest Neighbors": "knn.joblib",
+    "Gaussian Naive Bayes": "naive_bayes.joblib",
+    "Support Vector Machine": "svm.joblib",
+    
 }
 
 missing = [name for name, filename in MODEL_FILES.items() if not (MODEL_DIR / filename).exists()]
