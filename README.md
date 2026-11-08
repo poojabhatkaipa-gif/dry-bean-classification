@@ -56,17 +56,9 @@ The application supports:
 - Classification report
 - Downloadable predictions
 
-**TODO:** Paste your live Streamlit Community Cloud URL here.
+live Streamlit Community Cloud URL: (https://dry-bean-classification-nsz9bene3q5uux2mziqhgu.streamlit.app)
 
-## F. How to run in BITS Virtual Lab
 
-1. Open a Python 3 notebook or terminal in BITS Virtual Lab.
-2. Upload this project folder or clone your GitHub repository.
-3. Install dependencies: `pip install -r requirements.txt`
-4. Train and save the five models: `python train_models.py`
-5. Review `metrics.csv` and `test_data.csv`.
-6. Start the app: `streamlit run app.py`
-7. Capture one genuine screenshot showing assignment execution in BITS Virtual Lab.
 
 ## G. Repository contents
 
@@ -87,7 +79,4 @@ After training, your repository should contain:
 - AUC is calculated using weighted one-vs-rest multiclass ROC AUC.
 - MCC summarizes classification quality using all classes.
 
-## I. References
-- UCI Dry Bean Dataset: https://archive.ics.uci.edu/dataset/602/dry+bean+dataset
-- Scikit-learn documentation: https://scikit-learn.org/stable/
-- Streamlit documentation: https://docs.streamlit.io/
+
