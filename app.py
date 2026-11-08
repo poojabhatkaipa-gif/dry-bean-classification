@@ -55,7 +55,7 @@ st.dataframe(data.head(10), use_container_width=True)
 
 model_name = st.selectbox("2. Select a classification model", list(MODEL_FILES.keys()))
 bundle = joblib.load(MODEL_DIR / MODEL_FILES[model_name])
-model = bundle["pipeline"]
+model = bundle
 feature_columns = bundle["feature_columns"]
 
 missing_columns = [col for col in feature_columns if col not in data.columns]
