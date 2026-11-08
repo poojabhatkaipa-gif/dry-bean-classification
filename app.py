@@ -57,7 +57,6 @@ model_name = st.selectbox("2. Select a classification model", list(MODEL_FILES.k
 bundle = joblib.load(MODEL_DIR / MODEL_FILES[model_name])
 model = bundle
 feature_columns = bundle["feature_columns"]
-
 missing_columns = [col for col in feature_columns if col not in data.columns]
 if missing_columns:
     st.error("Your CSV is missing required feature columns: " + ", ".join(missing_columns))
